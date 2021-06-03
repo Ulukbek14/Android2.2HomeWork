@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Android22HomeWork">
         <activity
-            android:name=".MainActivity"
+            android:name=".MainActiviity"
             android:label="@string/app_name"
             android:theme="@style/Theme.Android22HomeWork.NoActionBar">
             <intent-filter>
