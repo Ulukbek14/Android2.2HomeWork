@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#292828"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.fromFragment">
+
+    <Toolbar
+        android:id="@+id/toolbar_form"
+        android:visibility="visible"
+        android:background="#191818"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+            <TextView
+                android:id="@+id/txt_day_month"
+                android:text="3 июня"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/txt_time"
+                android:text="17:41"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/txt_day_month"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="5dp"
+                android:textColor="#838282"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+
+            <TextView
+                android:id="@+id/txt_ready"
+                android:text="Готово"
+                android:textStyle="normal"
+                android:textSize="16sp"
+                android:textColor="#FFE500"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="17dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </Toolbar>
+
+    <EditText
+        app:layout_constraintTop_toBottomOf="@id/toolbar_form"
+        android:id="@+id/et_title"
+        android:hint="Enter title"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:layout_marginHorizontal="24dp"
+        android:layout_width="match_parent"
+        android:background="@drawable/custom_txt"
+        android:backgroundTint="#3C3C3C"
+        android:layout_height="60dp"/>
+
+    <EditText
+        android:textColor="@color/black"
+        android:id="@+id/et_description"
+        android:hint="Enter description"
+        android:textSize="14sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_title"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#3C3C3C"
+        android:textColorHint="@color/black"
+        android:background="@drawable/custom_txt"
+        android:layout_marginHorizontal="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"/>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
